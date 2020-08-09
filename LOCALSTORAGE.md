@@ -7,4 +7,4 @@ A project-oriented technical blog for JS beginners and learners! 🚀
 
 **Let's dive into it.
 
-The project case used here will be a good old to-do list, as it is exactly the kind of situation where we would need localStorage{: style="color: red; opacity: 0.80;" }.
+The project case used here will be a good old to-do list, as it is exactly the kind of situation where we would need localStorage.
