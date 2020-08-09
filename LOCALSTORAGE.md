@@ -1,8 +1,8 @@
 # THE "LOCAL STORAGE"
 
-## You need some dynamically created data to remain on screen AFTER the user hits the browser refresh button?
-## You need to SAVE the user's input.value somewhere? (because you just need to.)
-## Well, good news: that's what the localStorage is here for!!!🤩 
+### You need some dynamically created data to remain on screen AFTER the user hits the browser refresh button?
+### You need to SAVE the user's input.value somewhere? (because you just need to.)
+### Well, good news: that's what the localStorage is here for!!!🤩 
 
 **Let's dive into it.**
 
