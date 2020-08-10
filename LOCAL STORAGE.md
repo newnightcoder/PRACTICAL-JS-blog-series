@@ -24,16 +24,18 @@ To achieve that, we "manipulate" the DOM 😈, using one of the following method
 
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/sm5oybd1accwszl7nx1g.gif)
+
 Cool!
 
 But there's a **problem**: everytime we refresh the page, it all goes away... There's no onscreen persistence of the items we add. 
-**Once we hit the refresh button of our browser, our list goes empty**.🔄 😭 We need to fix this!
+**Once we hit the refresh button of our browser, our list goes empty**.🔄 😭 
+We need to fix this!
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/alexnid60865qmgiurxy.gif)
 
 That's precisely when `localStorage` comes into play!
 The Local Storage is a sort of browser database, that can save our data as strings (key/value pair objects).
-You can see the Local Storage in the devtools: instead of "console"😉, go to "application" (you might need to click on the little double-arrow on the right to have access to it). 
+You can see the Local Storage in the devtools: instead of "console"😉 , go to "application" (you might need to click on the little double-arrow on the right to have access to it). 
 Here it is:
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/kq4o40maxhp5kweut6mj.png)
@@ -45,7 +47,7 @@ This is where we can store our data!!
 
 **To create a storage:**
 `localStorage.setItem("mySuperStorage","yay!")`
-If you open a new tab in your browser, type that code in your console (+ press enter), you'll see the following🤩: 
+If you open a new tab in your browser, type that code in your console (+ press enter), you'll see the following🤩 : 
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/biyibbakx2z5zbd2jhdt.png)
 
@@ -99,7 +101,7 @@ To do that, thankfully we have the built-in `JSON.stringify()`  method!
 It gets done using the `JSON.parse()` method.
 We'll use it shortly.)
 
-At this point, if we check our localStorage, we see this🤩:
+At this point, if we check our localStorage, we see this🤩 :
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/7mv5yf2zj3z5wqg0k1iv.png)
 Our storage is called "TODO-app storage" as we wanted, and it is an empty array `[]`. 
 
@@ -125,7 +127,9 @@ We should see our localStorage in action!
 **<a name="3">3- Let's display all the todos stored in the localStorage after the user refreshes the browser or even closes the window and comes back!</a>**
 
 We'll manage to do that in 2 steps:
+
 1- a function to display the todos:
+
 ```
 function displayTodos() {
  const todoStorage = JSON.parse(localStorage.getItem('TODO-app storage')) || [];
@@ -140,6 +144,7 @@ function displayTodos() {
 }
 ```
 Quick breakdown of this code:
+
 - `JSON.parse(localStorage.getItem('TODO-app storage'))` : this is the JSON.parse() method we were talking about earlier! **When we save data to the storage: we need to JSON.stringify().** 
 **when we get our data from the storage, we need to JSON.parse().** 
 - `||[]` : it means todoStorage is either the JSON.parse() of todoStorage (which means it exists) OR `||` it's an empty array (if nothing has been stored yet)
@@ -149,9 +154,11 @@ If you don't know Fontawesome, click [here](https://fontawesome.com/icons?d=gall
 
 2- adding an event listener to the window to detect when the page gets refreshed (or closed and reopened). It is called the **DOMContentLoaded** event. It's another event we can listen too, just like 'click' or 'keydown'! 
 We'll invoke the displayTodos function at that moment:
+
 ```
 window.addEventListener('DOMContentLoaded', displayTodos);
 ```
+
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/3d0o6vwmbuab2evm3vn8.gif)
 Aaand that's a wrap!! The users of our TODO-app can refresh the page or close and reopen the browser: their list will still be on screen, like a real application!😎
 
