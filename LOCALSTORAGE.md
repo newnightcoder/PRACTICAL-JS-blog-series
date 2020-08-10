@@ -5,6 +5,7 @@
 ### Well, good news: that's what the localStorage is here for!!!🤩 
 
 
+
 **If you need to:**
 - save the value of some sort of counter and not have it reset to 0 each time you refresh the page
 - save the user's input.value somewhere? (because you just need to)
@@ -19,18 +20,21 @@
 
 The project case i'll use here is a good old to-do list, as it is exactly the kind of situation where we would really need to use localStorage.
 In a todo app, the user types something he wants to add to the list (in the input field) and when he presses the "add" or "submit" button, it gets added to the screen. 
-To achieve that, we do a DOM manipulation, using one of the following methods: 
+
+To achieve that, we "manipulate" the DOM 😈, using one of the following methods: 
 - [`createElement()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) + [`appendChild()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) 
 - or the one dear to my heart: [`insertAdjacentHTML()`](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML). 
 
-*You can click on each of them to see more information, in case you are not familiar with those DOM manipulation methods yet.*
-
-So, our todo app could be looking like this (or way simpler or better of course):
+*You can click on each of them to see more information, in case you are not yet familiar with DOM manipulation.*
 
 
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/sm5oybd1accwszl7nx1g.gif)
 Great!
 
-But there's a **problem**: everytime we refresh the page, it all goes away... There's absolutely no onscreen persistence of the items we add, **once we hit the refresh button of our browser, our list goes empty**.🔄 😭
+But there's a **problem**: everytime we refresh the page, it all goes away... There's no onscreen persistence of the items we add. 
+**Once we hit the refresh button of our browser, our list goes empty**.🔄 😭
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/alexnid60865qmgiurxy.gif)
 
 That's precisely when `localStorage` comes into play!
 The Local Storage is a sort of browser database, that can save our data as strings (key/value pair objects).
@@ -44,18 +48,18 @@ This is where we can store our data!!
 
 **Here's how.**
 
-To create your storage :
+To create a storage:
 `localStorage.setItem("mySuperStorage","yay!")`
-If you type that in your console right now, on the google homepage for example, no problem, you'll see the following🤩: 
+If you type it in your console (+ press enter), you'll see the following🤩: 
 
-IMAGE SPLIT CONSOLE + STORAGE
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/biyibbakx2z5zbd2jhdt.png)
 
 As simple as that.
 
-To retrieve the data that you stored there:
+To retrieve the data we stored:
 `localStorage.getItem("mySuperStorage")`
 
-IMAGE IN THE CONSOLE
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/jrs7cf5xqtd7829hxb8c.png)
 
 **Okay, and how does this work really?**
 
@@ -66,26 +70,25 @@ Under the hood:
 - which means that it doesn't matter if you have multiple tabs of the same website opened, it's the same localStorage as long as you are on this website (which is great!).
 - maximum size is about 5mb (which is plenty for storing key/value pairs. Those are just strings!)
 
-From a code perspective, localStorage comes in with 5 built-in methods.
-The ones we'll use all the time:
+In our code, localStorage comes in with 5 built-in methods.
+The ones we'll use all the time are:
 - `localStorage.setItem(name, content)`: setItem() lets you create your storage(s). The 1st parameter is the name you want to give to your storage, the 2nd parameter is what you want to put in this storage. You can create as much storages as you want!
 - `localStorage.getItem(name)`: getItem() lets you retrieve the data you stored in the storage. You have to specify the name of the data you want (name that you decided).
 - `localStorage.clear()`: the `clear()` method erases everything from the storage. No parameter needed, quick and easy!
 
-And also:
-- `localStorage.remove(key)`: to remove/erase the corresponding value of the key you specified (if your storage name is "abc": `localStorage.remove("abc")` will remove/erase your storage). 
-
-- `localStorage.key(number)`: here the number parameter works like the index for an array. So this method will give you the key or the name it will find at that "index" of the localStorage. It will work if you have several items or storages within localStorage.
-
-IMAGE CONSOLE
 
 **Now let's implement it in our TODO app example!** 
-We'll want to:
+We're going to:
 1- [create a storage with localStorage.setItem()](#1)
 2- [store each new task added by the user, in that storage!](#2) 
 3- [display all the todos stored in the localStorage after the user refreshes the browser or even closes the window and comes back!](#3)
 
+For now, our localStorage is empty. It hasn't been initialized yet.
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/9jahautzccy6f0w1ul8n.png)
+
 <a name="1">1- Let's create a storage with localStorage.setItem()</a>
+
 ```
 const todoStorage = [];  
 localStorage.setItem("TODO-app storage", JSON.stringify(todoStorage)); 
@@ -97,13 +100,13 @@ localStorage.setItem("TODO-app storage", JSON.stringify(todoStorage));
  - `JSON.stringify(todoStorage)`: this piece will turn the data we put in the storage into strings.
 Let's not forget that everything is a string in localStorage BUT in our JavaScript code, under the hood, our data is actually in JSON format (JavaScript Object Notation). So it HAS to be turned into strings in order to be stored in localStorage. 
 To do that, thankfully we have the built-in `JSON.stringify()`  method!
-Now is the moment you might ask: "okay so to retrieve the data from localStorage we will have to do the opposite, right? turn the strings back into JSON format?" and yes absolutely!!!🤩
+Now is the moment you might ask: "okay so to retrieve the data from localStorage we will have to do the opposite, right? turn the strings back into JSON format?" and yes absolutely!!!
 It gets done using the `JSON.parse()` method.
 We'll use it shortly. 
 
-At this point, if we check our localStorage, we see this:
-
-IMAGE LOCAL STORAGE
+At this point, if we check our localStorage, we see this🤩:
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/7mv5yf2zj3z5wqg0k1iv.png)
+Our storage is called "TODO-app storage" as we wanted, and it is an empty array `[]`. 
 
 <a name="2">2- Let's store each new task added by the user, in the storage! </a>
 1- `const todo = { task: input.value };` : this is what the user types in the input and submits to the screen. we declare a "todo" variable to be an object with a property we decided to call "task", which stores the value (the text) that gets typed in the input by the user. 
@@ -117,27 +120,19 @@ todoStorage.push(todo);
 localStorage.setItem("TODO-app storage",JSON.stringify('todoStorage'));
 }
 ```
-or 
-```
-const storeTodos = () => {
-const todo  = {task: input.value};
-todoStorage.push(todo);
-localStorage.setItem("TODO-app storage",JSON.stringify('todoStorage'));
-}
-```
 
 Let's invoke that function when the submit button is clicked for example!
 We should see our localStorage in action!
 
-IMAGE
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/5yu0xec1wa8vuwc7esq7.gif)
 
 <a name="3">3- Let's display all the todos stored in the localStorage after the user refreshes the browser or even closes the window and comes back!</a>
 
-We'll manage to do that thanks to 2 things:
-1- a function to display the todos
+We'll manage to do that in 2 steps:
+1- a function to display the todos:
 ```
 function displayTodos() {
- const todoStorage = JSON.parse(localStorage.getItem('todoStorage')) || [];
+ const todoStorage = JSON.parse(localStorage.getItem('TODO-app storage')) || [];
  todoStorage.forEach((todo) => {
     const userItem = `<li class="my-css">
                       <i class="far fa-square"></i>                     
@@ -148,24 +143,38 @@ function displayTodos() {
   }
 }
 ```
-2- an event listener on the window to know when the page gets refreshed (or closed and reopened). We'll invoke the displayTodos function at that moment!
+Quick breakdown of this code:
+- `JSON.parse(localStorage.getItem('TODO-app storage'))` : this is the JSON.parse() method we were talking about earlier. When saving data to the storage, we need to JSON.stringify(), and when getting data from the storage we need to JSON.parse(). 
+- `||[]` : it means todoStorage is either the JSON.parse() of todoStorage (which means it exists) OR it's an empty array (if nothing has been stored yet)
+- As you can see the rest is a DOM manipulation using template literal (very handy to render dynamically created HTML) + the insertAdjacentHTML() method!
+
+
+2- adding an event listener to the window to detect when the page gets refreshed (or closed and reopened). It is called the **DOMContentLoaded** event! It's another event we can listen too, just like 'click' or 'keydown'! 
+ We'll invoke the displayTodos function at that moment:
 ```
 window.addEventListener('DOMContentLoaded', displayTodos);
 ```
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/3d0o6vwmbuab2evm3vn8.gif)
+
 and that's a wrap!!
 
-let's break that down:
-DOMContentLoaded event:
 
+That was it for today about the Local Storage! 
+I hope this article was somewhat helpful or maybe gives you some inspiration for your own projects.
 
-That was it about the Local Storage! 
-I hope this article will help or give you some inspiration for your own projects.
-
+Let me know if there's any aspect you would like me to develop further. 
+For now, thank you for reading.
 Next article next week!🤙🏾
 
 
 
  
+
+
+  
+
+
+
 
 
   
