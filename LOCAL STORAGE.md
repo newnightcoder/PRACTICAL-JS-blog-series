@@ -59,15 +59,15 @@ As simple as that.
 ### Okay, and how does this work really?
 
 **Under the hood**:
-- localStorage is a property of the Window object. 
-- it stores data permanently (unless you erase it, we'll see how below),
-- there is one localStorage per website/domain,
-- which means that it doesn't matter if you have multiple tabs of the same website opened, it's the same localStorage as long as you are on this website (which is great!).
+- localStorage is a property of the Window object
+- it stores data permanently (unless you erase it, we'll see how below)
+- there is one localStorage per website/domain
+- which means that it doesn't matter if you have multiple tabs of the same website opened, it's the same localStorage as long as you are on this website (which is great!)
 - maximum size is about 5mb (which is plenty for storing key/value pairs. They are just strings, very light!)
 
 **In our code**, localStorage comes in with 5 built-in methods.
 The ones we'll use all the time are:
-- `localStorage.setItem(name, content)`: setItem() lets you create your storage(s). The 1st parameter is the name you want to give to your storage, the 2nd parameter is what you want to put in this storage. You can create as much storages as you want!
+- `localStorage.setItem(name, content)`: setItem() lets you create your storage(s). The 1st parameter is the name you want to give to your storage, the 2nd parameter is what you want to put in this storage. You can create as many storages as you want!
 - `localStorage.getItem(name)`: getItem() lets you retrieve the data you stored in the storage. You have to specify the name of the data you want (= the name that you gave to your storage).
 - `localStorage.clear()`: the `clear()` method erases everything from the storage. No parameter needed, quick and easy!
 
@@ -89,7 +89,7 @@ const todoStorage = [];
 localStorage.setItem("TODO-app storage", JSON.stringify(todoStorage)); 
 ```
 - 1st line of code:
-`const todoStorage = []`: this creates an empty array (which will store all the todos entered by the user.
+`const todoStorage = []`: this creates an empty array (which will store all the todos entered by the user)
 - now let's break the 2nd line of code in 2 parts:
  - `localStorage.setItem("TODO-app storage",`: this piece of code creates a storage named "TODO-app storage" in our localStorage. 
  - `JSON.stringify(todoStorage)`: this part will turn the data we put in the storage into strings.
@@ -155,12 +155,17 @@ window.addEventListener('DOMContentLoaded', displayTodos);
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/3d0o6vwmbuab2evm3vn8.gif)
 Aaand that's a wrap!! The users of our TODO-app can refresh the page or close and reopen the browser: their list will still be on screen, like a real application!😎
 
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/01r05byepibxy5knvwrl.gif)
 That was it for today about the Local Storage! 
 I hope this article was somewhat helpful or that it could give you some inspiration/ideas for your own projects.
 
-Let me know in the comments below if there's any aspect you would like me to develop further or if you have any question.
+Let me know in the comments below if there's any aspect you would like me to develop further or if you have any question/remark/suggestion.
+
 For now, thank you for reading.
+
 Next article next week!🤙🏾
+
+
 
 
 
