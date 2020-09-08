@@ -13,12 +13,13 @@ as a JS learner, React **reactivated**💡 my drive/focus to keep learning and m
 In a way, React saved my learning journey! I was feeling lost in a Javascript sea, somehow "tired" of vanilla JS...Hard to admit because i love JavaScript and i love writing code. That's why i do feel like React pretty much saved my life.
 
 The plan of this article:
-- [How much JavaScript did i know when i started with React (quite recently)](#1) 
-- [Where or what is the learning curve exactly? / 2 things you'll have to know.](#2)
-- [The HUGE Benefits of starting learning React](#3)
-- [Are you ready to start? / You think you're not ready](#4)
+- [Why/How/when did i finally jump in React?](#1)
+- [How much JavaScript did i know when i started with React (quite recently)](#2) 
+- [React "philosophy": how steep is the learning curve exactly?](#3)
+- [The HUGE Benefits of starting learning React](#4)
+- [Are you ready to start? / You think you're not ready](#5)
 
-
+<a name="1"></a>
 ## 1- So here's how it all started.
 
 *The trigger*
@@ -30,7 +31,7 @@ I was roaming the youtube streets in search of advice when i saw this comment un
 this is a short snippet of the comment this viewer wrote, but it's the part that stuck to me the most. he had put words onto this thing i had been feeling for a few weeks at this point. "hate" may be a strong word, but i could relate so much! then the viewer explains his journey and it's very interesting. for me personnaly, JavaScript had become difficult, somewhat dry. Or maybe it was the learning journey itself (that was becoming difficult and dry)...
 anyways, this very comment sparkled something in me, "i'm not alone!" and quickly: "i'll start react tomorrow!"
 
-<a name="1"></a>
+<a name="2"></a>
 **How much JavaScript did i know when i started React:**
 - general JS syntax (but still learning new things everyday lol)
 - dom manipulation 
@@ -50,17 +51,18 @@ In June i received a dm from my 100DaysOfCode friend Danny, encouraging me to im
 3 weeks later (it took me that long to feel "ready" to follow Danny's encouraging advice) i finally started to implement my todo app with React!🚀 it's almost finished now, i'm fixing the last 2 bugs as we speak!
 And here i am today, learning React and having a real blast!
 
-<a name="2"></a>
-## React "philosophy"
-React isn't this difficult as a beginner.
-You just have to know or *realize* 2 things:
+<a name="3"></a>
+## React "philosophy : learning curve?"
+React isn't this difficult for a JS beginner with some fundamental steady knowledge.
+You just have *realize* 2 things:
+
 **1- Think Component!**
 
 No-brainer: a website or app is **built** by different elements (navbar/menu, sections/pages, footer etc...). We agree on that.
 So it means that these elements are the **components** of the website. 
 That only is a MAJOR part of React (and i guess of the other 2 front-end framworks Vue and Angular, but not sure as i have not yet worked with them).
-In the code, you write the components as classes (class component) or functions (functional components).
-So any component will start like this:
+In the code, you write the components as classes (class component) or functions (functional components). One js file for each Component. No variable naming conflicts anymore and just perfect: components are reusable of course! in another project (a contact form for example!), or in the same project several times (a button or anything else you might think of!)
+So any component will be created like this:
 - class component:
 ```
 class MyComponent extends React.Component = {
@@ -79,24 +81,31 @@ const MyComponent = () => {
  // some code
 }
 ```
-**JSX, or: Forget about the index.html file.**
-Now. Look at this. This is the code for an actual real component. Let's say the title of a website.
+**JSX, or: Forget about your index.html file & Forget about DOM manipulations😈** 
+OK. Look at the snippet below. This is the code for an actual real component. Let's say the title of a website.
 - full code, class component:
 ```
 class Title extends React.Component = {
  render(){
-  return <h1> I am the f***ing Title component of this website!!! How sway!!! </h1>
+  return <h1> I am the f***ing Title component of the website!!! Sway!!! </h1>
  }
 }
 ```
-- same, functional component (arrow functions are always possible as well of course):
+- same, functional component 
 ```
 function Title(){
- return <h1> I am the f***ing Title component of this website!!! How sway!!! </h1>
+ return <h1> I am the f***ing Title component of the website!!! Sway!!! </h1>
 }
 ```
-I know. Your brain is shouting to you: "HEY WAIT! is that HTML that i see in the return statement?"
-Well, almost... It's **JSX**. 
+- arrow functions are always possible as well of course:
+```
+const Title = () => {
+ return <h1> I am the f***ing Title component of the website!!! Sway!!! </h1>
+}
+```
+I know. Your brain is shouting: "HEY WAIT! isn't that HTML that i see in the return statement?"
+Well, almost yes! It's... **JSX**!
+
 To "create" the components we want, forget about the index.html file. React uses **JSX**. 
 Though is sounds quite badass, it's just classic html "on steroids"!
 On steroids or "enhanced" because you can write things like ```<div> </div>``` (use of many classic html tags is possible!!) but also ```<MyComponent> < /MyComponent>``` or self-closing ```<MyComponent />```. 
@@ -144,7 +153,7 @@ These 2 things, **Components** and **State** are at the core of what you may pro
 So, things are handled very differently, indeed, but it's absolutely possible to start learning, even if you're not a JavaScript Jedi yet!
 
 
-<a name="3"></a>
+<a name="4"></a>
 ## The HUGE Benefits of starting to learn React now.
 **Jump / Progress in JS knowledge**
  - Your OOP knowledge, ease will increase dramatically!! : you'll be writing an insane amount of ```this.state.myStuff```, ```this.state.otherThing``` or ```this.myMethod```, ```this.otherMethodOfMine```.
@@ -153,11 +162,19 @@ You'll use the "this" keyword a lot (in class components) and get a good grasp/u
 - faster then you know you will spend your time destructuring the state (it sounds so complicated now but trust me it is simple once you are within React).
 Also, you will have to use the spread operator😬 a lot! What i wish i'd known earlier on: this: ```[...array]``` is the same as ```array.slice()``` and  ```.slice()``` is the array method to *make a copy* of an array. You'll need it a lot in React, for your state management! all the time! 
 Today i'm so unimpressed by the spread operator now and i'm destructuring the sht out of everything! And it's only been 3 weeks or so since i started!
+
+**Get quicker to the goal of finding a junior dev job!**
+Let's be honest: React seems to be quite present in the tech industry. Many companies are using it or planning to.
+I think the sooner you jump into it, the better. You'll HAVE TO learn JavaScript either way! So why not do it with React? 2 stones 1 bird. But poor bird😢 so 1 stone 2 ricochets (or more!😉 ) Awesome!
+
 **Quicker to the goal of being employable one day**
 **Use of many great libraries, dependancies**
-**Get to use webpack for real!**
+From *webpack* to bundle the project to *react-bootstrap* or *material-UI* for layout, *react-spring* for animations, *styled.components* or *emotion* to write CSS in JS a certain way (very cool!) and the list goes on!
+This is how i quickly came to a real understanding/feeling of what it means to BUILD projects.
 
-<a name="4"></a>
+
+
+<a name="5"></a>
 ## You ARE ready to start! 👊🏾
 
 Yeah, now is the moment when you drop everything you were doing and start learning React! 
