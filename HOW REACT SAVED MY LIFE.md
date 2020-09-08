@@ -1,4 +1,4 @@
-**If you have :  in one of these situations:**
+**If you have :**
 
 - a decent knowledge of JavaScript but DON'T feel ready to start learning a front-end framework yet,
 - been learning JS for while and you got tired/discouraged/bored or burnt out,
@@ -13,7 +13,7 @@ as a JS learner, React **reactivated**💡 my drive/focus to keep learning and m
 In a way, React saved my learning journey! I was feeling lost in a Javascript sea, somehow "tired" of vanilla JS...Hard to admit because i love JavaScript and i love writing code. That's why i do feel like React pretty much saved my life.
 
 The plan of this article:
-- [Where was i in terms of learning when i started with React (quite recently)](#1) 
+- [How much JavaScript did i know when i started with React (quite recently)](#1) 
 - [Where or what is the learning curve exactly? / 2 things you'll have to know.](#2)
 - [The HUGE Benefits of starting learning React](#3)
 - [Are you ready to start? / You think you're not ready](#4)
@@ -31,7 +31,7 @@ this is a short snippet of the comment this viewer wrote, but it's the part that
 anyways, this very comment sparkled something in me, "i'm not alone!" and quickly: "i'll start react tomorrow!"
 
 <a name="1"></a>
-**What did i know, code-wise:**
+**How much JavaScript did i know when i started React:**
 - general JS syntax (but still learning new things everyday lol)
 - dom manipulation 
 - fetch from an API + sense of what a promise is (#3LW for the connoisseurs lol) but without being able to explain it like a pro, unlike fetch()😎lol, but i knew fetch() is a promise. i'll write/explain about ```fetch```in another article.
@@ -42,12 +42,12 @@ anyways, this very comment sparkled something in me, "i'm not alone!" and quickl
 **What was i scared of or impressed by:**
 - the spread operator 
 - destructuring
-- using libraries (except for moment.js ❤️). i had never tried bootstrap or anything like that.
+- using libraries (except for moment.js ❤️ ). i had never tried bootstrap or anything like that.
 - React. plain and simple. 
 
 *The switch moment*
-i received a dm from a nice 100DaysOfCode friend of mine, Danny, encouraging me to implement the vanilla JS todo-app i was working on, with a framework. I could have chosen Vue, many people say Vue is the easiest front-end framwork to learn, great for beginners! Which is great, but i thought "React!!!" because that's what i chose for my learning roadmap and i thought: i'll spend **time** learning a framework anyway (i follow the "learning by doing" method so it still takes me some time to finish one project! lol) so it'll be more time efficient if i start with React NOW.  
-I finally started to implement my todo app with React (took me about 3 weeks after the dm of my friend to feel "ready" lol)
+In June i received a dm from my 100DaysOfCode friend Danny, encouraging me to implement the vanilla JS todo-app i was working on, **with a framework!** I could have chosen Vue.js as many people say Vue is the easiest front-end framework to learn, great for beginners! Which is great, but i thought "React!!!" because that's what i chose for my learning roadmap and i thought: i'll spend **time** learning a framework anyway (i follow the "learning by doing" method so it takes me some time to finish one project! lol) so in the grand scheme of things it'll be more time efficient for me to just jump into React.  
+3 weeks later (it took me that long to feel "ready" to follow Danny's encouraging advice) i finally started to implement my todo app with React!🚀 it's almost finished now, i'm fixing the last 2 bugs as we speak!
 And here i am today, learning React and having a real blast!
 
 <a name="2"></a>
@@ -61,19 +61,19 @@ So it means that these elements are the **components** of the website.
 That only is a MAJOR part of React (and i guess of the other 2 front-end framworks Vue and Angular, but not sure as i have not yet worked with them).
 In the code, you write the components as classes (class component) or functions (functional components).
 So any component will start like this:
-class component:
+- class component:
 ```
 class MyComponent extends React.Component = {
   //some code
 }
 ```
-the same, functional component:
+- the same, functional component:
 ```
 function MyComponent(){
    //some code
 }
 ```
-You prefer arrow functions? okay:
+- you prefer arrow functions? yes:
 ```
 const MyComponent = () => {
  // some code
@@ -81,7 +81,7 @@ const MyComponent = () => {
 ```
 **JSX, or: Forget about the index.html file.**
 Now. Look at this. This is the code for an actual real component. Let's say the title of a website.
-Full code, class component:
+- full code, class component:
 ```
 class Title extends React.Component = {
  render(){
@@ -89,7 +89,7 @@ class Title extends React.Component = {
  }
 }
 ```
-same, functional component (arrow functions are always possible as well of course):
+- same, functional component (arrow functions are always possible as well of course):
 ```
 function Title(){
  return <h1> I am the f***ing Title component of this website!!! How sway!!! </h1>
@@ -158,10 +158,10 @@ Today i'm so unimpressed by the spread operator now and i'm destructuring the sh
 **Get to use webpack for real!**
 
 <a name="4"></a>
-## Words of encouragement 👊🏾
+## You ARE ready to start! 👊🏾
 
-So, yeah, now is the moment when you drop everything you were doing and start learning React! 
-But you are in the middle of finishing yet ANOTHER js project? okay, keep at it BUT implement it with React!
+Yeah, now is the moment when you drop everything you were doing and start learning React! 
+You are in the middle of finishing yet another JS project? okay, keep at it BUT implement it with React!
 1- open the terminal and type: ```npx install react```
 2- create a folder for this very first react project!
 3- back to terminal, make sure to locate yourself within this new folder (that is if you didn't create the folder from terminal using the ```mkdir``` command😉) and type: ```create-react-app``` (give a name to your project)
