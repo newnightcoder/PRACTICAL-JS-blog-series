@@ -1,3 +1,13 @@
+**If you are in one of these situations:**
+- save the value of some sort of counter and not have it reset to 0 each time you refresh the page
+- save the user's input.value somewhere (because you need to)
+- keep dynamically created data on the screen AFTER a browser refresh
+- or anything like that
+
+**Here is a good read for you!!!**
+ 
+--------------------
+
 By the very emphatic title of this post😋 what i really mean is: as a JS learner, React **reactivated** my drive to learn more and make progress in JavaScript + **boosted** my overall coding confidence. React somehow saved my learning journey! that's why i do feel like React pretty much saved my life.
 
 the plan of this article:
