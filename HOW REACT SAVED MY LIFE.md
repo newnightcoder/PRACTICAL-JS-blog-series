@@ -11,6 +11,7 @@
 By the quite emphatic title of this post,
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/ab0bc6y5c2ijob868fmk.gif)
+
 what i really mean is: 
 as a JS learner, React **reactivated**💡 my drive/focus to keep learning and make progress with JavaScript + **boosted**🚀 my overall coding confidence. 
 In a way, React saved my learning journey! I was feeling lost in a Javascript sea, somehow "tired" of vanilla JS...Hard to admit because i love JavaScript and i love writing code. That's why i do feel like React pretty much saved my life. Or at least my learning journey!
