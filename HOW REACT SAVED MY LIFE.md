@@ -2,7 +2,7 @@
 
 - having doubts about your coding "level" to start learning React,
 - at a decent "level" of knowledge of JavaScript but don't feel ready to start learning a front-end framework yet,
-- been learning JS for while and got tired/discouraged/bored or burnt out,
+- learning JS and got tired/discouraged/bored or burnt out,
 - working on a beautiful front-end project that makes you feel like 1000+ lines of codes are a bit much all in ONE JS file,
 - in need of some novelty/excitement/challenge/motivation in your coding journey,
 - thinking React is NOT for you cause it's too difficult,
@@ -53,12 +53,12 @@ But here i am today, 100% learning React, todo app almost ready, having a real b
 
 - general JS syntax (but still learning new things and tricks almost everyday lol)
 - DOM manipulations and template literals, like:
-```
+```javascript
 const todayDiv = document.querySelector("#today");
 const week = [tuesday, wednesday, friday, saturday, sunday];
 const day = `<div class="tuesday"> Hello! Today is ${week[0]}. Have a nice day!</div>`;
 todayDiv.insertAdjacentHTML('afterbegin', day); 
-```
+```javascript
 - fetch data from an API + HTTP requests
 - sense of what a promise is (#3LW for the connoisseurs😋) but without being able to explain it like a pro (unlike fetch()😎) but i knew fetch() is a promise (or rather, fetch() *returns* a promise, giving us access to methods like `.then()` or `.catch()`) but i'll write/explain about `fetch` in another article soon!
 - array methods/higher order functions like `forEach()` and `map()`, `filter()` and the other array methods like `sort()`, `push()` to add at the end of an array and `unshift()` to push at the beginning! (*sidenote*: when displaying a dynamic list for example, the `unshift()` method is very useful to make the dynamically added items appear at the TOP of the list and not at the bottom... 😉 )
@@ -97,56 +97,56 @@ In the code, you write the components as a class (class component) or a function
 
 So any component will be created like this:
 - class component:
-```
+```javascript
 class MyComponent extends Component = {
   //some code
 }
-```
+```javascript
 *by the way:* the `Component` class that we extend to create our components comes from React!😉
 We import it at the very top of the file.
 - you can write the same as a function (functional component):
-```
+```javascript
 function MyComponent(){
    //some code
 }
-```
+```javascript
 - arrow function? yes:
-```
+```javascript
 const MyComponent = () => {
  // some code
 }
-```
+```javascript
 
 OK. Look at the snippet below. This is the full code for an actual real component. 
 Let's say the title component of a website.
 - class component:
-```
+```javascript
 class Title extends Component = {
  render(){
   return <h1> I am the motherf*****g Title component of the website!!! Sway!!! </h1>
  }
 }
-```
+```javascript
 - same component, functional:
-```
+```javascript
 function Title(){
  return <h1> I am the motherf*****g Title component of the website!!! Sway!!! </h1>
 }
-```
+```javascript
 - arrow function, yes please:
-```
+```javascript
 const Title = () => {
- return <h1> I am the f***ing Title component of the website!!! Sway!!! </h1>
+ return <h1> I am the motherf***ing Title component of the website!!! Sway!!! </h1>
 }
-```
+```javascript
 I know. Your brain is shouting: "HEY WAIT! isn't that HTML that i see in the return statement?"
 Well, no. It's... **JSX**!
 And have you noticed the `render()`method in the class component? It belongs to the Component class of React and is responsible for displaying, **rendering** the JSX! As you can see, functional components have no `render()`, which makes sense: they're not classes! They just use the `return` statement.
 
 **JSX, or: Forget about your index.html file!** 
 
-To "create" the components we want, forget about the traditional index.html file. React uses **JSX**. 
-You could see it as "JS disguised as html-on-steroids".
+To create the components we want, forget about the traditional index.html file. React uses **JSX**. 
+You could see JSX as "JS disguised as html-on-steroids".
 So JSX is actual JavaScript that looks 100% like html! 
 That's why i would say that there's almost no learning curve there.
 You can write things like `<div> </div>` (many classic html tags are possible!!) but also `<MyComponent> </MyComponent>` or self-closing `<MyComponent />`. 
@@ -161,18 +161,18 @@ Let me put it this way: **in React, our components will behave on screen the way
 In other words, our components on screen are "reacting" to updates (or changes) of the variables/data they are responsible for, their **state**.
 
 In our code, the **state** is simply an object!
-```
+```javascript
 state = {
  key:value,
  key:value
 // etc...
 }
-```
+```javascript
 The **state** is defined by YOU when creating your class component. It will **store the data** or **starting point value** used by the component that needs it.
 (*sidenote*: the **state** is "initialised" in class components only! It can also be handled by functional components, with the React HOOKS! I used to be so impressed by this word when in fact that's all it is: built-in React methods to manage state within functional components! But that's another story you'll be reading soon 😉 ).
 
 So for example, to create a classic Counter component, you would write:
- ```
+ ```javascript
  class Counter extends Component = {
   state = { count : 0 }
 
@@ -180,7 +180,7 @@ So for example, to create a classic Counter component, you would write:
    return <div> {this.state.count} </div>
   }
  }
- ```
+ ```javascript
 This means that the starting point of our Counter is zero. 
 Now: everytime the **state** of the Counter (count : 0) will be incremented or decremented, React will **render** or **re-render** (again and again) the Counter with its updated count on the screen. 
 How does it work under the hood? Well, it's too complicated to explain right now and i actually couldn't😋  but just to give you the main thing: React uses a virtual DOM and there's React.createElement()... 
@@ -197,7 +197,7 @@ So how can we increment or decrement a counter if we can't manipulate the DOM ou
 Well, it gets done with built-in React methods!!😉  Let's not forget it's all JavaScript, so of course it comes with very cool and easy to use built-in methods!
 The main one is: `setState()`. You will be using it all the time! `this.setState()`
 - in our Counter component, it would look like:
-```
+```javascript
  class Counter extends Component = {
   state = { count : 0 }
  
@@ -214,7 +214,7 @@ The main one is: `setState()`. You will be using it all the time! `this.setState
    )
   }
  } 
-```
+```javascript
 Not that crazy complicated, you see? 
 And this counter works perfectly! You press the button and the number in the div just below increases! (you need to add some css of course😋 but you know how to do that!)
 I know you still might have some reservations but i'm sure you understand this simple counter by just reading the code. Self-explanatory enough, right?
