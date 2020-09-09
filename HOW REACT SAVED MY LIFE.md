@@ -49,7 +49,7 @@ But here i am today, 100% learning React, todo app almost ready, having a real b
 
 <a name="2"></a>
 
-**How much JS did i know when i started with React:**
+## How much JS did i know when i started with React:
 
 - general JS syntax (but still learning new things and tricks everyday lol)
 - DOM manipulations and template literals, like:
@@ -75,7 +75,6 @@ todayDiv.insertAdjacentHTML('afterbegin', day);
 - writing `async` functions + use `await` keyword, i have to be honest here 😅
 - using libraries (except for moment.js ❤️ ): i had never used bootstrap or any other library
 - React. plain and simple.  
-
 
 
 <a name="3"></a>
