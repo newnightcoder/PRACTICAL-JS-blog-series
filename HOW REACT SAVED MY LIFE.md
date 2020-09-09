@@ -1,9 +1,11 @@
-**If you have :**
+**If you are :**
 
-- doubts about your coding "level" to start learning React,
-- a decent knowledge of JavaScript but DON'T feel ready to start learning a front-end framework yet,
+- having doubts about your coding "level" to start learning React,
+- at a decent "level" of knowledge of JavaScript but don't feel ready to start learning a front-end framework yet,
 - been learning JS for while and got tired/discouraged/bored or burnt out,
-- been working on a beautiful front-end project that makes you feel like 1000+ lines of codes are a bit much all on ONE JS file,
+- working on a beautiful front-end project that makes you feel like 1000+ lines of codes are a bit much all on ONE JS file,
+- in need of some novelty/excitement/challenge/motivation in your coding journey,
+- thinking React is NOT for you cause it's too difficult,
 
 **this post might be for you!!!**
  
@@ -15,7 +17,7 @@ By the quite dramatic title of this post,
 
 what i really mean is: 
 as a JS learner, React **reactivated**💡 my drive/focus to keep learning and make progress with JavaScript + **boosted**🚀 my overall coding confidence. 
-I was feeling lost in a Javascript sea, somehow "tired" of vanilla JS...Hard to admit, because i love JavaScript and i love writing code. That's why i do feel like React pretty much saved my life. Or at least my learning journey!
+I was feeling lost in a Javascript sea, somehow "tired" of vanilla JS...Hard to admit, because i love JS and i love writing code. That's why i do feel like React pretty much saved my life. Or at least my learning journey!
 
 The plan of this article:
 - [Why/How did i finally jump into React?](#1)
@@ -29,23 +31,24 @@ The plan of this article:
 
 *The trigger*
 
-I was roaming the youtube streets in search of advice when i saw this comment under a great video on the topic of "from vanilla JS to a framework":
+I was roaming the youtube streets in search of advice/inspiration when i saw this comment:
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/f7mp6uv29pyi72iknthr.png)
 
 this is a short snippet of the comment left by this viewer, but it's the part that struck me the most: he had put words onto this thing i had been feeling for a few weeks at this point. "nearly HATE JavaScript" may sound intense, but i could totally relate! 
-For me personnaly, just before meeting React, JavaScript had become quite difficult, somehow dry. Or maybe it was the learning journey itself (that was becoming difficult and dry)...
+For me personally, just before meeting React, JavaScript had become quite difficult, somehow dry. Or maybe it was the learning journey itself (that was becoming difficult and dry)...
 Anyways, this very comment sparked something in me: "oh cool i'm not alone to feel that way!" and quickly: "i'm starting React tomorrow!"
 
 *The extra push*
 
-Shortly after that on twitter, I received a DM from my 100DaysOfCode friend Danny, who has experience as a developer, encouraging me to try implementing **with a framework** the vanilla JS todo app i was working on! 
+Shortly after that, I received a DM on twitter from my 100DaysOfCode friend Danny (who has experience as a developer) encouraging me to try implementing **with a framework** the vanilla JS todo app i was working on! 
 I could have chosen Vue.js as many people say Vue is the easiest front-end framework to learn, ideal for beginners! Which sounds great, but i thought "React!!!" because that's what i chose for the Roadmap of my coding journey and knowing i'll **spend time** learning a framework anyway (i follow the "learning by doing" method so it takes me some time to finish one project!) it'll be more time efficient for me to just jump into React.  
 It took me some more time (3 weeks?) to feel "ready" to follow Danny's advice and i finally started to implement my todo app with React!🚀 
 I actually had to rebuild it from the ground up! 
 But here i am today, 100% learning React, todo app almost ready, having a real blast at it, more excited than ever to swim in JavaScript!
 
 <a name="2"></a>
+
 **How much JS did i know when i started with React:**
 
 - general JS syntax (but still learning new things and tricks everyday lol)
@@ -76,6 +79,7 @@ todayDiv.insertAdjacentHTML('afterbegin', day);
 
 
 <a name="3"></a>
+
 ## React "philosophy" : steep learning curve?
 
 React isn't that difficult for a JS beginner with some "basic" but steady knowledge.
@@ -88,7 +92,7 @@ This *different* approach is based on 2 main things:
 
 No-brainer alert: a website or app is a construction **built** of different elements (navbar/menu, sections/pages, footer etc...). We agree on that.
 So we can see these elements as the **components** of the website. 
-Well that's React rule#1 in a nutshell!
+Well, that's React rule#1 in a nutshell!
 
 In the code, you write the components as a class (class component) or a function (functional component). 1 (one) JS file per component. No variable naming conflicts anymore and cherry on top: components are reusable! of course! reusable in other projects (a contact form for example!), or in the same project several times (a button!)
 
@@ -99,7 +103,9 @@ class MyComponent extends Component = {
   //some code
 }
 ```
-- or you can write the same as a function (functional component):
+*by the way:* the `Component` class that we extend to create our components comes from React!😉
+We import it at the very top of the file .
+- you can write the same as a function (functional component):
 ```
 function MyComponent(){
    //some code
@@ -136,6 +142,7 @@ const Title = () => {
 ```
 I know. Your brain is shouting: "HEY WAIT! isn't that HTML that i see in the return statement?"
 Well, no. It's... **JSX**!
+And have you noticed the `render()`method in the class component? It belongs to the Component class of React and is responsible for displaying, **rendering** the JSX! As you can see, functional components have no `render()`, which makes sense: they're not classes! They just use the `return` statement.
 
 **JSX, or: Forget about your index.html file!** 
 
@@ -145,7 +152,7 @@ So JSX is actual JavaScript that looks 100% like html!
 That's why i would say that there's almost no learning curve there.
 You can write things like `<div> </div>` (many classic html tags are possible!!) but also `<MyComponent> </MyComponent>` or self-closing `<MyComponent />`. 
 
-So in other words: React "generates" the html of our project. I know. "WAIT! REACT GENERATES THE HTML???" yes! you got it! Sorry if i spoiled the big reveal but that's an essential and exciting part of React. 
+So in other words: React "generates" the html of our project. I know. "WAIT! WHAT? REACT GENERATES THE HTML???" yes! you got it! Sorry if i spoiled the big reveal but that's an essential and exciting part of React. 
 For the styling? classic CSS file. Or, to reduce the number of files and because it's super handy, it's also possible to write CSS in JS! There are many options to do that, but you'll discover them very soon! 
 
 **2- The "state". What👏🏾 does👏🏾 it👏🏾 mean👏🏾 ?**
@@ -181,13 +188,14 @@ How does it work under the hood? Well, it's too complicated to explain right now
 
 **Forget about DOM manipulations😈 !** 
 
-In React, you do NOT get to manipulate the DOM😈 !!! It's over. Under the hood: React.createElement(), remember?
+In React, you do NOT get to manipulate the DOM😈 !!! It's over.😭 But wait! React is awesome, trust me on this one.
 React "creates" the html we need and handles the DOM manipulations we want to achieve.
-As we said earlier,  React **renders** the components (update of a timer or lazy-loading of a div for example) according to their **state**.
-This whole rendering thing corresponds to what's called the component's **lifecycle**. In React, we say that components are mounted or unmouted, some libraries use the terms "enter", "leaves" referring to the component! You see what i mean? 
+Under the hood: React.createElement(), remember?
+As we said earlier,  React **renders** (or **re-renders**) the components according to their **state** (update of a timer or dark-mode toggle for example).
+This whole rendering thing corresponds to what's called the component's **lifecycle**. In React, we say that we "mount"/"unmount" components, or components are "mounted"/"unmounted", various libraries use terms like "enter", "active", "exit" referring to the component! You see what i mean? 
 
 So how can we increment or decrement a counter if we can't manipulate the DOM ourselves? 
-Well, it gets done with built-in React methods!!😉  Let's not forget it's still all JavaScript, of course it comes with very cool and easy built-in methods!
+Well, it gets done with built-in React methods!!😉  Let's not forget it's all JavaScript, so of course it comes with very cool and easy to use built-in methods!
 The main one is: `setState()`. You will be using it all the time: `this.setState()`!
 - in our Counter component it would look like:
 ```
@@ -220,6 +228,7 @@ These 2 things, **Components** and **State** are at the core of what you probabl
 Indeed, things are handled quite **differently**, but it's absolutely possible to start learning it, even if like me, you're not a JS Jedi yet!
 
 <a name="4"></a>
+
 ## The HUGE Benefits of starting to learn React now.
 
 **Jump / Progress in JS knowledge**
@@ -244,6 +253,7 @@ From *webpack* to bundle the project to *react-bootstrap* or *material-UI* for l
 This is how i quickly came to a real understanding - almost awakening - of what it really means to BUILD projects. This is all architecture! How great!!!
 
 <a name="5"></a>
+
 ## You ARE ready to start! 👊🏾
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/ys2819ozquqv37o84ocp.gif)
