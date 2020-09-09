@@ -1,8 +1,9 @@
 **If you have :**
 
+- doubts about your coding "level" to start learning React,
 - a decent knowledge of JavaScript but DON'T feel ready to start learning a front-end framework yet,
-- been learning JS for while and you got tired/discouraged/bored or burnt out,
-- been working on a beautiful JS project that makes you feel like it would be so cool to break your code in several parts/modules,
+- been learning JS for while and got tired/discouraged/bored or burnt out,
+- been working on a beautiful front-end project that makes you feel like 1000+ lines of codes are a bit much all on ONE JS file,
 
 **this post might be for you!!!**
  
