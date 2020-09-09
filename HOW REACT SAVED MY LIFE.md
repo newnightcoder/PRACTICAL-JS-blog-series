@@ -35,7 +35,7 @@ I was roaming the youtube streets in search of advice/inspiration when i saw thi
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/f7mp6uv29pyi72iknthr.png)
 
-this is a short snippet of the comment left by this viewer, but it's the part that struck me the most: he had put words onto this thing i had been feeling for a few weeks at this point. "nearly HATE JavaScript" may sound intense, but i could totally relate! 
+This is a short snippet of what this viewer wrote, but it's the part that struck me the most: he had put words onto this thing i had been feeling for a few weeks at this point. "nearly HATE JavaScript" may sound intense, but i could totally relate! 
 For me personally, just before meeting React, JavaScript had become quite difficult, somehow dry. Or maybe it was the learning journey itself (that was becoming difficult and dry)...
 Anyways, this very comment sparked something in me: "oh cool i'm not alone to feel that way!" and quickly: "i'm starting React tomorrow!"
 
@@ -51,7 +51,7 @@ But here i am today, 100% learning React, todo app almost ready, having a real b
 
 ## How much JS did i know when i started with React:
 
-- general JS syntax (but still learning new things and tricks everyday lol)
+- general JS syntax (but still learning new things and tricks almost everyday lol)
 - DOM manipulations and template literals, like:
 ```
 const todayDiv = document.querySelector("#today");
@@ -103,7 +103,7 @@ class MyComponent extends Component = {
 }
 ```
 *by the way:* the `Component` class that we extend to create our components comes from React!😉
-We import it at the very top of the file .
+We import it at the very top of the file.
 - you can write the same as a function (functional component):
 ```
 function MyComponent(){
@@ -243,7 +243,7 @@ And it's only been 2 full weeks of learning sofar! You can do it too, for real. 
 **Get quicker to the goal of finding a junior dev job!**
 
 Let's be honest: React is very popular on the job market. 
-I think the sooner you jump into it, the better. You HAVE TO learn JavaScript  anyway! So why not do it with React? 2 stones 1 bird. But poor bird😢 so 1 stone 2 ricochets on the water! (even more than 2..😉 ) 
+I think the sooner you jump into it, the better. You HAVE TO learn JavaScript  anyway! So why not do it with React? 1 stone 2 birds. But poor birds😢 so 1 stone 2 skips!! (much more than 2..😉 ) 
 
 **Discovery of many great libraries, dependencies**
 
