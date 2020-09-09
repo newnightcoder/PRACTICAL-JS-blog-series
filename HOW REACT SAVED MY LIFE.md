@@ -249,8 +249,8 @@ This is how i quickly came to a real understanding - almost awakening - of what 
 
 Yeah, now is the moment when you drop everything you were doing and start learning React! 
 
-1- create a folder for this very first react project!
-2- open the terminal (make sure to locate yourself within this new folder) and type: `npx create-react-app my-app`
+1- create a folder for this very first React project!
+2- open the terminal (make sure to locate yourself within this new folder you just created) and type: `npx create-react-app my-app`
 3- once the installation is complete in the terminal, you can read: 
 ```
  cd my-app
@@ -259,12 +259,12 @@ Yeah, now is the moment when you drop everything you were doing and start learni
 Happy hacking!
 ```
 3- so, type as they say: `cd my app` and hit enter😉
-4- now type: `npm start`, hit enter, wait a moment...
+4- now type: `npm start`, hit enter, wait a moment, wait...
 AND BOOM!🚀 the magic is starting!
+Welcome to React my fellow learner!
 
+Good luck on your journey!!! i'm still at it and having a lot of fun! I wish you the same.✊🏾
+Happy coding and thank you for reading!
 
-Good luck on your journey!!! i'm still at it and having a lot of (productive) fun! 
-All the best to you✊🏾 happy coding and thank you for reading!
-
-See you in the next article (i think it will be about promises).
+See you in the next article (i think it will be about fetch or promises, and shorter😋).
 
