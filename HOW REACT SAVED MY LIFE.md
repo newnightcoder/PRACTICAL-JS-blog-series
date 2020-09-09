@@ -196,8 +196,8 @@ This whole rendering thing corresponds to what's called the component's **lifecy
 
 So how can we increment or decrement a counter if we can't manipulate the DOM ourselves? 
 Well, it gets done with built-in React methods!!😉  Let's not forget it's all JavaScript, so of course it comes with very cool and easy to use built-in methods!
-The main one is: `setState()`. You will be using it all the time: `this.setState()`!
-- in our Counter component it would look like:
+The main one is: `setState()`. You will be using it all the time! `this.setState()`
+- in our Counter component, it would look like:
 ```
  class Counter extends Component = {
   state = { count : 0 }
@@ -217,15 +217,15 @@ The main one is: `setState()`. You will be using it all the time: `this.setState
  } 
 ```
 Not that crazy complicated, you see? 
-And this counter works perfectly! You press the button and the number in the div below increases! (you need to add some css of course😋 but you know how to do that!)
+And this counter works perfectly! You press the button and the number in the div just below increases! (you need to add some css of course😋 but you know how to do that!)
 I know you still might have some reservations but i'm sure you understand this simple counter by just reading the code. Self-explanatory enough, right?
-Everytime we press the button, it **changes** the **state** (in this case we increment it) of our Counter **component**, so React **re-renders** our updated Counter each time we click the button!🤩
+Everytime we press the button, it **changes** the **state** of our Counter **component** (in this example we increment it) , so React **re-renders** our updated Counter each time we click the button!🤩
 
-And now when you'll hear about **state management**, you'll know it's about handling the changes of **state** of a component. Or, the **sharing** of the state between several components! You'll be facing this situation very often and early on! 
+So now when you'll hear about **state management**, you'll know it's about handling the changes of **state** of a component. Or, the **sharing** of the state between several components! You'll be facing this situation very often and early on! 
 And you will get it, i guarantee it.
 
 These 2 things, **Components** and **State** are at the core of what you probably have heard people refer to as the *"React philosophy"*. 
-Indeed, things are handled quite **differently**, but it's absolutely possible to start learning it, even if like me, you're not a JS Jedi yet!
+Indeed, things are handled quite *differently*, but it's absolutely possible to start learning it now, even if like me, you're not a JS Jedi yet!😅
 
 <a name="4"></a>
 
@@ -233,9 +233,9 @@ Indeed, things are handled quite **differently**, but it's absolutely possible t
 
 **Jump / Progress in JS knowledge**
 
-- Because of React's class components, it will contribute to improve your OOP knowledge : you'll be writing a certain amount of  `this.state.myStuff`, `this.setState({ key : value })`, `this.state.otherStuff`, `this.myMethod`, `this.otherMethodOfMine`...
-- faster then you know you will spend your time destructuring the state (it sounds so complicated now but trust me it is so simple once you are within React).
-Also, you will have to use the spread operator `...`😬 all the time! Check this out: `[...array]` is the same as `array.slice()` and  `.slice()` is the array method to *make a copy* of an array. You'll need it a lot in React, to change/update a state! You'll learn that **the state is immutable** and it has consequences. But don't panic, React has several major built-in methods to deal with that.
+- Because of React's class components, you will improve your OOP practice : you'll be writing a certain amount of  `this.state.myStuff`, `this.setState({ key : value })`, `this.state.otherStuff`, `this.myMethod`, `this.otherMethodOfMine`...
+- Faster than you know, you'll spend your time destructuring the state (it sounds so complicated now but trust me it is so simple once you are within React).
+Also, you will have to use the spread operator `...`😬 all the time! Check this out: `[...array]` is the same as `array.slice()`. And  `.slice()` is the array method to *make a copy* of an array. You'll need it a lot in React, to change/update the state! Indeed, you'll learn that **the state is immutable** and it has consequences. But don't panic, React has several major built-in methods to deal with that.
 - You can be 100% confident that your JS knowledge will seriously rocket or at least strengthen, by learning React!
  
 Today i'm so unimpressed by the spread operator and i'm destructuring the shht out of everything!😂 
@@ -244,13 +244,14 @@ And it's only been 2 full weeks of learning sofar! You can do it too, for real. 
 **Get quicker to the goal of finding a junior dev job!**
 
 Let's be honest: React is very popular on the job market. 
-I think the sooner you jump into learning it, the better. You HAVE TO learn JavaScript  anyway! So why not do it with React? 2 stones 1 bird. But poor bird😢 so 1 stone 2 ricochets (even more than 2!😉 ) 
+I think the sooner you jump into it, the better. You HAVE TO learn JavaScript  anyway! So why not do it with React? 2 stones 1 bird. But poor bird😢 so 1 stone 2 ricochets on the water! (even more than 2..😉 ) 
 
-**Discovery of many great libraries, dependancies**
+**Discovery of many great libraries, dependencies**
 
-Also, React comes in with a plethora of tools, libraries, dependencies which is also very good for you to try, it will make you feel more at ease with web *development* in general.  
+React comes in with a plethora of tools, libraries, dependencies, which are also very good for you to try. It will make you feel more at ease with web *development* in general.  
 From *webpack* to bundle the project to *react-bootstrap* or *material-UI* for layout, *react-spring* for animations, *styled.components* or *emotion* to write CSS- in-JS (very cool!) and the list goes on!
 This is how i quickly came to a real understanding - almost awakening - of what it really means to BUILD projects. This is all architecture! How great!!!
+Of course that's not all there is to the notion of "building" a project but we're getting there!
 
 <a name="5"></a>
 
