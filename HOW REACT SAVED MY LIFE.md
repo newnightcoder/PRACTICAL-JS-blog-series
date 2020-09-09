@@ -8,17 +8,17 @@
  
 --------------------
 
-By the quite emphatic title of this post,
+By the quite dramatic title of this post,
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/ab0bc6y5c2ijob868fmk.gif)
 
 what i really mean is: 
 as a JS learner, React **reactivated**💡 my drive/focus to keep learning and make progress with JavaScript + **boosted**🚀 my overall coding confidence. 
-In a way, React saved my learning journey! I was feeling lost in a Javascript sea, somehow "tired" of vanilla JS...Hard to admit because i love JavaScript and i love writing code. That's why i do feel like React pretty much saved my life. Or at least my learning journey!
+I was feeling lost in a Javascript sea, somehow "tired" of vanilla JS...Hard to admit, because i love JavaScript and i love writing code. That's why i do feel like React pretty much saved my life. Or at least my learning journey!
 
 The plan of this article:
-- [Why/How/when did i finally jump into React?](#1)
-- [How much JavaScript did i know when i started with React (quite recently)](#2) 
+- [Why/How did i finally jump into React?](#1)
+- [How much JavaScript did i know when i started with React recently?](#2) 
 - [React "philosophy": how steep is the learning curve exactly?](#3)
 - [The HUGE Benefits of starting learning React](#4)
 - [Are you ready to start? / You think you're not ready](#5)
@@ -32,51 +32,52 @@ I was roaming the youtube streets in search of advice when i saw this comment un
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/f7mp6uv29pyi72iknthr.png)
 
-this is a short snippet of the comment left by this person, but it's the part that struck me the most: he had put words onto this thing i had been feeling for a few weeks at this point. "nearly HATE JavaScript" may sound intense, but i could totally relate! 
+this is a short snippet of the comment left by this viewer, but it's the part that struck me the most: he had put words onto this thing i had been feeling for a few weeks at this point. "nearly HATE JavaScript" may sound intense, but i could totally relate! 
 For me personnaly, just before meeting React, JavaScript had become quite difficult, somehow dry. Or maybe it was the learning journey itself (that was becoming difficult and dry)...
 Anyways, this very comment sparked something in me: "oh cool i'm not alone to feel that way!" and quickly: "i'm starting React tomorrow!"
 
+*The extra push*
+
+Shortly after that on twitter, I received a DM from my 100DaysOfCode friend Danny, who has experience as a developer, encouraging me to try implementing **with a framework** the vanilla JS todo app i was working on! 
+I could have chosen Vue.js as many people say Vue is the easiest front-end framework to learn, ideal for beginners! Which sounds great, but i thought "React!!!" because that's what i chose for the Roadmap of my coding journey and knowing i'll **spend time** learning a framework anyway (i follow the "learning by doing" method so it takes me some time to finish one project!) it'll be more time efficient for me to just jump into React.  
+It took me some more time (3 weeks?) to feel "ready" to follow Danny's advice and i finally started to implement my todo app with React!🚀 
+I actually had to rebuild it from the ground up! 
+But here i am today, 100% learning React, todo app almost ready, having a real blast at it, more excited than ever to swim in JavaScript!
+
 <a name="2"></a>
-**How much JavaScript did i know when i started with React:**
+**How much JS did i know when i started with React:**
 
 - general JS syntax (but still learning new things and tricks everyday lol)
 - DOM manipulations and template literals, like:
 ```
 const todayDiv = document.querySelector("#today");
 const week = [tuesday, wednesday, friday, saturday, sunday];
-const day = `<div class="whatever"> Hello! Today is ${week[0]}. Have a nice day!</div>`;
+const day = `<div class="tuesday"> Hello! Today is ${week[0]}. Have a nice day!</div>`;
 todayDiv.insertAdjacentHTML('afterbegin', day); 
 ```
 - fetch data from an API + HTTP requests
 - sense of what a promise is (#3LW for the connoisseurs😋) but without being able to explain it like a pro (unlike fetch()😎) but i knew fetch() is a promise (or rather, fetch() *returns* a promise, giving us access to methods like `.then()` or `.catch()`) but i'll write/explain about `fetch` in another article soon!
-- array methods/higher order functions like `forEach()` and `map()`, `filter()` and the other array methods like `sort()`, `push()` to add at the end of an array and `unshift()` to push at the beginning! 
-*sidenote*: when displaying a dynamic list for example, the `unshift()` method is very useful to make the dynamically added items appear at the TOP of the list and not at the bottom... 😉 )
+- array methods/higher order functions like `forEach()` and `map()`, `filter()` and the other array methods like `sort()`, `push()` to add at the end of an array and `unshift()` to push at the beginning! (*sidenote*: when displaying a dynamic list for example, the `unshift()` method is very useful to make the dynamically added items appear at the TOP of the list and not at the bottom... 😉 )
 - callbacks (in array methods/higher order functions for example)
-- basic knowledge of CLI (**C**ommand-**L**ine **I**nterface aka terminal).
-- OOP basics (**O**bject **O**riented **P**rogramming) : it means i was able to create classes and use/understand the "this" keyword, without being utterly confused lol.
+- basic knowledge of CLI (**C**ommand-**L**ine **I**nterface aka terminal)
+- OOP basics (**O**bject **O**riented **P**rogramming) : it means i was able to create classes and use/understand the "this" keyword, without being utterly confused lol
 - basic knowledge of how JS works under the hood, which is very exciting to learn! (the callstack, lexical environment, execution context etc...) - but you absolutely don't need to know that to start React. We have to know and understand how JS works under the hood in order to become better JS developers in general, not to learn React.
 
 **What was i scared of or impressed by:**
 
-- the spread operator `...`: i had NEVER used it and had no idea what it was for! I used ot find it very intimidating.
-- destructuring `({ })` : scary because too abstract/complicated for me (that's what i thought) 
+- the spread operator `...`: i had NEVER used it and had no idea what it was for! I used to find it very intimidating
+- destructuring: scary because too abstract/complicated for me (that's what i thought) 
 - writing promises other then fetch() in my code  
 - writing `async` functions + use `await` keyword, i have to be honest here 😅
-- using libraries (except for moment.js ❤️ ): i had never used bootstrap or any other library.
+- using libraries (except for moment.js ❤️ ): i had never used bootstrap or any other library
 - React. plain and simple.  
 
-*The encouragement*
 
-On twitter, I received a DM from my 100DaysOfCode friend Danny, who has experience as a developer, encouraging me to try implementing **with a framework** the vanilla JS todo app i was working on! 
-I could have chosen Vue.js as many people say Vue is the easiest front-end framework to learn, ideal for beginners! Which sounds great, but i thought "React!!!" because that's what i chose for the Roadmap of my coding journey and knowing i'll **spend time** learning a framework anyway (i follow the "learning by doing" method so it takes me some time to finish one project!) it'll be more time efficient for me to just jump into React.  
-It took me some more time (3 weeks?) to feel "ready" to follow Danny's advice and i finally started to implement my todo app with React!🚀 
-I actually had to rebuild it from the ground up! And it took me some time!
-But here i am today, 100% learning React, todo app almost finished, having a real blast at it, more excited than ever to swim in JavaScript!
 
 <a name="3"></a>
 ## React "philosophy" : steep learning curve?
 
-React isn't that difficult for a JS beginner with some fundamental steady knowledge.
+React isn't that difficult for a JS beginner with some "basic" but steady knowledge.
 React offers a *different* approach for seeing and coding our websites. It's not as hard as you think. Trust me.
 In fact, it's quite clever, powerful and fun!
 
@@ -88,7 +89,7 @@ No-brainer alert: a website or app is a construction **built** of different elem
 So we can see these elements as the **components** of the website. 
 Well that's React rule#1 in a nutshell!
 
-In the code, you write the components as a class (class component) or a function (functional component). 1 (one) js file per component. No variable naming conflicts anymore and cherry on top: components are reusable! of course! reusable in other projects (a contact form for example!), or in the same project several times (a button!)
+In the code, you write the components as a class (class component) or a function (functional component). 1 (one) JS file per component. No variable naming conflicts anymore and cherry on top: components are reusable! of course! reusable in other projects (a contact form for example!), or in the same project several times (a button!)
 
 So any component will be created like this:
 - class component:
@@ -133,25 +134,26 @@ const Title = () => {
 }
 ```
 I know. Your brain is shouting: "HEY WAIT! isn't that HTML that i see in the return statement?"
-Well, almost yes! It's in fact... **JSX**!
+Well, no. It's... **JSX**!
 
 **JSX, or: Forget about your index.html file!** 
 
 To "create" the components we want, forget about the traditional index.html file. React uses **JSX**. 
-Though it sounds quite badass, it's just like classic html "on steroids".
-It is actually JavaScript and NOT html, but as you can see the syntax looks 100% like html! That's why i would say that there's almost no learning curve there.
+You could see it as "JS disguised as html-on-steroids".
+So JSX is actual JavaScript that looks 100% like html! 
+That's why i would say that there's almost no learning curve there.
 You can write things like `<div> </div>` (many classic html tags are possible!!) but also `<MyComponent> </MyComponent>` or self-closing `<MyComponent />`. 
 
-So in other words: React "generates" the html of our project. "WAIT! REACT GENERATES THE HTML???" yes! you got it! Sorry if i spoiled the big reveal but that's an essential and exciting part of React. (Under the hood, React.createElement() does the magic ✨)
+So in other words: React "generates" the html of our project. I know. "WAIT! REACT GENERATES THE HTML???" yes! you got it! Sorry if i spoiled the big reveal but that's an essential and exciting part of React. 
 For the styling? classic CSS file. Or, to reduce the number of files and because it's super handy, it's also possible to write CSS in JS! There are many options to do that, but you'll discover them very soon! 
 
 **2- The "state". What👏🏾 does👏🏾 it👏🏾 mean👏🏾 ?**
 
-The other thing that's *different* is React handles our variables/data and the behaviour of our components!
-Let me put it this way: **in React, our components will behave the way we want on screen based on their change of state**.
-In other words, our components on screen are "reacting" to updates (or changes) of the variables/data they are responsible for.
+The other thing that's *different* is the way React handles our variables/data and the behaviour of our components!
+Let me put it this way: **in React, our components will behave on screen the way we want them to, based on their change of state**.
+In other words, our components on screen are "reacting" to updates (or changes) of the variables/data they are responsible for, their **state**.
 
-In our code, the **state** is just an object:
+In our code, the **state** is simply an object!
 ```
 state = {
  key:value,
@@ -159,13 +161,17 @@ state = {
 // etc...
 }
 ```
-The **state** is defined by YOU when creating your class component. It will **store** the data or starting point values used by the component that needs it.
-(*sidenote*: the **state** is "initialized" in class components only! It can also be handled by functional components, with the React HOOKS! I used to be so impressed by this word when in fact that's all it is: built-in React methods to manage state within functional components! But that's another story you'll be knowing soon 😉 ).
+The **state** is defined by YOU when creating your class component. It will **store the data** or **starting point value** used by the component that needs it.
+(*sidenote*: the **state** is "initialised" in class components only! It can also be handled by functional components, with the React HOOKS! I used to be so impressed by this word when in fact that's all it is: built-in React methods to manage state within functional components! But that's another story you'll be reading soon 😉 ).
 
 So for example, to create a classic Counter component, you would write:
  ```
  class Counter extends Component = {
   state = { count : 0 }
+
+  render(){
+   return <div> {this.state.count} </div>
+  }
  }
  ```
 This means that the starting point of our Counter is zero. 
@@ -187,12 +193,23 @@ The main one is: `setState()`. You will be using it all the time: `this.setState
  class Counter extends Component = {
   state = { count : 0 }
  
- incrementCounter = () => {
-  this.setState({ count : this.state.count + 1 }) 
- }
-} 
+  incrementCounter = () => {
+   this.setState({ count : this.state.count + 1 }) 
+  }
+
+  render(){
+   return( 
+    <div>
+     <button onClick = {this.incrementCounter}> Click me to increment the counter below! <button>
+     <div>{this.state.count}<div/>
+    </div>
+   )
+  }
+ } 
 ```
 Not that crazy complicated, you see? 
+And this is counter works perfectly! You press the button and the number in the div below increases!
+I know you have some doubts but i'm sure that you understand this super simple counter by just reading the code. Self-explanatory enough, right?
 
 And now when you'll hear about **state management**, you'll know it's about handling the changes of **state** of a component. Or, the **sharing** of the state between several components! You'll be facing this situation very often and early on! 
 And you will get it, i guarantee it.
@@ -207,8 +224,8 @@ Indeed, things are handled quite **differently**, but it's absolutely possible t
 
 - Because of React's class components, it will contribute to improve your OOP knowledge : you'll be writing a certain amount of  `this.state.myStuff`, `this.setState({ key : value })`, `this.state.otherStuff`, `this.myMethod`, `this.otherMethodOfMine`...
 - faster then you know you will spend your time destructuring the state (it sounds so complicated now but trust me it is so simple once you are within React).
-Also, you will have to use the spread operator `...`😬 all the time! Check this out: `[...array]` is the same as `array.slice()` and  `.slice()` is the array method to *make a copy* of an array. You'll need it a lot in React, to change/update a state! You'll learn that **the state is immutable** (you canNOT change it dorectly like that), so you HAVE to make a *copy* of it (with the... spread operator 😋), update the copy as you want and paste the updated copy (like a copy/paste really!)
-- Be sure of that: your JS knowledge with seriously incresase or strengthen by learning React!
+Also, you will have to use the spread operator `...`😬 all the time! Check this out: `[...array]` is the same as `array.slice()` and  `.slice()` is the array method to *make a copy* of an array. You'll need it a lot in React, to change/update a state! You'll learn that **the state is immutable** (you canNOT change it directly like that), so you HAVE to make a *copy* of it (with the... spread operator 😋), update the copy as you want and paste the updated copy (like a copy/paste really!)
+- Be sure of that: your JS knowledge with seriously increase or strengthen by learning React!
  
 Today i'm so unimpressed by the spread operator and i'm destructuring the shht out of everything!😂 
 And it's only been 2 full weeks of learning sofar! You can do it too, for real. Just take your time, to each his/her own pace. 
