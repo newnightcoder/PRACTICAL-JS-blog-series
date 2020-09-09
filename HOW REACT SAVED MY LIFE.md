@@ -177,7 +177,7 @@ How does it work under the hood? Well, it's too complicated to explain right now
 In React, you do NOT get to manipulate the DOM😈 !!! It's over. Under the hood: React.createElement(), remember?
 React "creates" the html we need and handles the DOM manipulations we want to achieve.
 As we said earlier,  React **renders** the components (update of a timer or lazy-loading of a div for example) according to their **state**.
-This whole rendering thing corresponds to what's called the component's **lifecycle**. In React, we say that components are mounted or unmouted, some libraries use the terms "enter", "leaves" referring to the component! You see what i mean? This is part of the *React philosophy.*
+This whole rendering thing corresponds to what's called the component's **lifecycle**. In React, we say that components are mounted or unmouted, some libraries use the terms "enter", "leaves" referring to the component! You see what i mean? 
 
 So how can we increment or decrement a counter if we can't manipulate the DOM ourselves? 
 Well, it gets done with built-in React methods!!😉  Let's not forget it's still all JavaScript, of course it comes with very cool and easy built-in methods!
@@ -192,13 +192,13 @@ The main one is: `setState()`. You will be using it all the time: `this.setState
  }
 } 
 ```
-Not that crazy complicated, you see?
+Not that crazy complicated, you see? 
+
 And now when you'll hear about **state management**, you'll know it's about handling the changes of **state** of a component. Or, the **sharing** of the state between several components! You'll be facing this situation very often and early on! 
 And you will get it, i guarantee it.
 
-To conclude, these 2 things, **Components** and **State** are at the core of what you may probably have heard people refer to as the *"React philosophy"*. 
-Indeed, things are handled quite differently, but it's absolutely possible to start learning, even if you're not a JavaScript Jedi yet!
-
+These 2 things, **Components** and **State** are at the core of what you may probably have heard people refer to as the *"React philosophy"*. 
+Indeed, things are handled quite **differently**, but it's absolutely possible to start learning, even if, like me, you're not a JavaScript Jedi yet!
 
 <a name="4"></a>
 ## The HUGE Benefits of starting to learn React now.
@@ -207,19 +207,22 @@ Indeed, things are handled quite differently, but it's absolutely possible to st
 
 - Because of React's class components, it will contribute to improve your OOP knowledge : you'll be writing a certain amount of  `this.state.myStuff`, `this.setState({ key : value })`, `this.state.otherStuff`, `this.myMethod`, `this.otherMethodOfMine`...
 - faster then you know you will spend your time destructuring the state (it sounds so complicated now but trust me it is so simple once you are within React).
-Also, you will have to use the spread operator `...`😬 all the time! Check this out: `[...array]` is the same as `array.slice()` and  `.slice()` is the array method to *make a copy* of an array. You'll need it a lot in React, to change/update a state! 
+Also, you will have to use the spread operator `...`😬 all the time! Check this out: `[...array]` is the same as `array.slice()` and  `.slice()` is the array method to *make a copy* of an array. You'll need it a lot in React, to change/update a state! You'll learn that **the state is immutable** (you canNOT change it dorectly like that), so you HAVE to make a *copy* of it (with the... spread operator 😋), update the copy as you want and paste the updated copy (like a copy/paste really!)
+- Be sure of that: your JS knowledge with seriously incresase or strengthen by learning React!
  
 Today i'm so unimpressed by the spread operator and i'm destructuring the shht out of everything!😂 
-And it's only been 2 weeks of learning sofar! You can do it too, for real.
+And it's only been 2 full weeks of learning sofar! You can do it too, for real. Just take your time, to each his/her own pace. 
 
 **Get quicker to the goal of finding a junior dev job!**
-Let's be honest: React is used by many companies. 
-I think the sooner you jump into learning it, the better. You'll HAVE TO learn JavaScript either way! So why not do it with React? 2 stones 1 bird. But poor bird😢 so 1 stone 2 ricochets (or more than 2 actually😉 ) Awesome!
 
-**Use of many great libraries, dependancies**
-From *webpack* to bundle the project to *react-bootstrap* or *material-UI* for layout, *react-spring* for animations, *styled.components* or *emotion* to write CSS in JS a certain way (very cool!) and the list goes on!
-This is how i quickly came to a real understanding of what it means to BUILD projects.
+Let's be honest: React is very popular on the job market. 
+I think the sooner you jump into learning it, the better. You HAVE TO learn JavaScript either way! So why not do it with React? 2 stones 1 bird. But poor bird😢 so 1 stone 2 ricochets (or more than 2!😉 ) 
 
+**Discovery of many great libraries, dependancies**
+
+Also, React comes in with a plethora of tools, libraries, dependencies which is also very good for you to try, it will make you feel more at ease with *development*.  
+From *webpack* to bundle the project to *react-bootstrap* or *material-UI* for layout, *react-spring* for animations, *styled.components* or *emotion* to write CSS- in-JS (very cool!) and the list goes on!
+This is how i quickly came to a real understanding almost awakening of what it means to BUILD projects.
 
 <a name="5"></a>
 ## You ARE ready to start! 👊🏾
