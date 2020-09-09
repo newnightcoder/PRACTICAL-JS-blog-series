@@ -210,13 +210,13 @@ The main one is: `setState()`. You will be using it all the time: `this.setState
 Not that crazy complicated, you see? 
 And this counter works perfectly! You press the button and the number in the div below increases! (you need to add some css of course😋 but you know how to do that!)
 I know you still might have some reservations but i'm sure you understand this simple counter by just reading the code. Self-explanatory enough, right?
-Everytime we press the button, it **changes** the **state** (in this case we increment it) of our Counter **component**, so React **re-renders** our updated Counter each time we click!🤩
+Everytime we press the button, it **changes** the **state** (in this case we increment it) of our Counter **component**, so React **re-renders** our updated Counter each time we click the button!🤩
 
 And now when you'll hear about **state management**, you'll know it's about handling the changes of **state** of a component. Or, the **sharing** of the state between several components! You'll be facing this situation very often and early on! 
 And you will get it, i guarantee it.
 
-These 2 things, **Components** and **State** are at the core of what you may probably have heard people refer to as the *"React philosophy"*. 
-Indeed, things are handled quite **differently**, but it's absolutely possible to start learning, even if, like me, you're not a JavaScript Jedi yet!
+These 2 things, **Components** and **State** are at the core of what you probably have heard people refer to as the *"React philosophy"*. 
+Indeed, things are handled quite **differently**, but it's absolutely possible to start learning it, even if, like me, you're not a JavaScript Jedi yet!
 
 <a name="4"></a>
 ## The HUGE Benefits of starting to learn React now.
