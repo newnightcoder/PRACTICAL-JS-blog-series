@@ -251,14 +251,20 @@ Yeah, now is the moment when you drop everything you were doing and start learni
 
 1- create a folder for this very first react project!
 2- open the terminal (make sure to locate yourself within this new folder) and type: `npx create-react-app my-app`
-3- once the installation is complete, you can read: 
-3- back to terminal,  and type: `create-react-app` (give a name to your project)
-4- within your app folder on terminal, type:`npm start`
-BOOM the magic is starting!
+3- once the installation is complete in the terminal, you can read: 
+```
+ cd my-app
+ npm start
+
+Happy hacking!
+```
+3- so, type as they say: `cd my app` and hit enter😉
+4- now type: `npm start`, hit enter, wait a moment...
+AND BOOM!🚀 the magic is starting!
 
 
 Good luck on your journey!!! i'm still at it and having a lot of (productive) fun! 
-All the best to you✊🏾 happy coding!
+All the best to you✊🏾 happy coding and thank you for reading!
 
 See you in the next article (i think it will be about promises).
 
