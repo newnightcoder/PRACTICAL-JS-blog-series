@@ -8,7 +8,10 @@
  
 --------------------
 
-By the quite emphatic title of this post, what i really mean is: 
+By the quite emphatic title of this post,
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/ab0bc6y5c2ijob868fmk.gif)
+what i really mean is: 
 as a JS learner, React **reactivated**💡 my drive/focus to keep learning and make progress with JavaScript + **boosted**🚀 my overall coding confidence. 
 In a way, React saved my learning journey! I was feeling lost in a Javascript sea, somehow "tired" of vanilla JS...Hard to admit because i love JavaScript and i love writing code. That's why i do feel like React pretty much saved my life. Or at least my learning journey!
 
@@ -203,14 +206,15 @@ This is how i quickly came to a real understanding of what it means to BUILD pro
 
 <a name="5"></a>
 ## You ARE ready to start! 👊🏾
-
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/ys2819ozquqv37o84ocp.gif)
 Yeah, now is the moment when you drop everything you were doing and start learning React! 
 You are in the middle of finishing yet another JS project? okay, keep at it BUT implement it with React!
-1- open the terminal and type: ```npx install react```
+1- open the terminal and type: `npx install react`
 2- create a folder for this very first react project!
-3- back to terminal, make sure to locate yourself within this new folder (that is if you didn't create the folder from terminal using the ```mkdir``` command😉) and type: ```create-react-app``` (give a name to your project)
-4- within your app folder on terminal, type:``` npm start```
+3- back to terminal, make sure to locate yourself within this new folder (that is if you didn't create the folder from terminal using the `mkdir` command😉) and type: `create-react-app` (give a name to your project)
+4- within your app folder on terminal, type:`npm start`
 BOOM the magic is starting!
+
 
 Good luck on your journey!!! i'm still at it and having a lot of (productive) fun! 
 All the best to you✊🏾 happy coding!
