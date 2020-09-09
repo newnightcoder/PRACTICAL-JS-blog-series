@@ -207,7 +207,9 @@ This is how i quickly came to a real understanding of what it means to BUILD pro
 
 <a name="5"></a>
 ## You ARE ready to start! 👊🏾
+
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/ys2819ozquqv37o84ocp.gif)
+
 Yeah, now is the moment when you drop everything you were doing and start learning React! 
 You are in the middle of finishing yet another JS project? okay, keep at it BUT implement it with React!
 1- open the terminal and type: `npx install react`
