@@ -248,10 +248,10 @@ I think the sooner you jump into it, the better. You HAVE TO learn JavaScript  a
 
 **Discovery of many great libraries, dependencies**
 
-React comes in with a plethora of tools, libraries, dependencies, which are also very good for you to try. It will make you feel more at ease with web *development* in general.  
+React comes in with a plethora of available tools, libraries, dependencies, which are also very good for you to try. It will make you feel more at ease with web *development* in general.  
 From *webpack* to bundle the project to *react-bootstrap* or *material-UI* for layout, *react-spring* for animations, *styled.components* or *emotion* to write CSS- in-JS (very cool!) and the list goes on!
 This is how i quickly came to a real understanding - almost awakening - of what it really means to BUILD projects. This is all architecture! How great!!!
-Of course that's not all there is to the notion of "building" a project but we're getting there!
+Of course that's not all there is behind the concept of "building" a project but we're getting there!
 
 <a name="5"></a>
 
@@ -261,7 +261,7 @@ Of course that's not all there is to the notion of "building" a project but we'r
 
 Yeah, now is the moment when you drop everything you were doing and start learning React! 
 
-1- create a folder for this very first React project!
+1- create a folder for your very first React project! yes let's do it!
 2- open the terminal (make sure to locate yourself within this new folder you just created) and type: `npx create-react-app my-app`
 3- once the installation is complete in the terminal, you can read: 
 ```
@@ -275,8 +275,8 @@ Happy hacking!
 AND BOOM!🚀 the magic is starting!
 Welcome to React my fellow learner!
 
-Good luck on your journey!!! i'm still at it and having a lot of fun! I wish you the same.✊🏾
-Happy coding and thank you for reading!
+Good luck on your journey!!! i'm still at it and having a lot of fun! Let's keep learning!✊🏾
+All the best, and thank you for reading!
 
-See you in the next article (i think it will be about fetch or promises, and shorter😋).
+See you in the next article (shorter i **promise**😋).
 
