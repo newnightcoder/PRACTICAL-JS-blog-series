@@ -3,7 +3,7 @@
 - having doubts about your coding "level" to start learning React,
 - at a decent "level" of knowledge of JavaScript but don't feel ready to start learning a front-end framework yet,
 - been learning JS for while and got tired/discouraged/bored or burnt out,
-- working on a beautiful front-end project that makes you feel like 1000+ lines of codes are a bit much all on ONE JS file,
+- working on a beautiful front-end project that makes you feel like 1000+ lines of codes are a bit much all in ONE JS file,
 - in need of some novelty/excitement/challenge/motivation in your coding journey,
 - thinking React is NOT for you cause it's too difficult,
 
