@@ -86,7 +86,7 @@ For now, our localStorage is empty. It hasn't been initialized yet.
 
 **<a name="1">1- Let's create a storage with localStorage.setItem()</a>**
 
-```
+```javascript
 const todoStorage = [];  
 localStorage.setItem("TODO-app storage", JSON.stringify(todoStorage)); 
 ```
@@ -111,7 +111,7 @@ Our storage is called "TODO-app storage" as we wanted, and it is an empty array 
 2- `todoStorage.push(todo);` : easy array method `push()`to add the todo to the array todoStorage, the empty one we created earlier. 
 3- `localStorage.setItem("TODO-app storage", JSON.stringify(todoStorage));` : now we set the Local Storage content to be that of our array todoStorage!
 let's wrap all that in a function that we could call storeTodos():
-```
+```javascript
 function storeTodos(){
 const todo  = {task: input.value};
 todoStorage.push(todo);
@@ -130,7 +130,7 @@ We'll manage to do that in 2 steps:
 
 1- a function to display the todos:
 
-```
+```javascript
 function displayTodos() {
  const todoStorage = JSON.parse(localStorage.getItem('TODO-app storage')) || [];
  todoStorage.forEach((todo) => {
@@ -155,7 +155,7 @@ If you don't know Fontawesome, click [here](https://fontawesome.com/icons?d=gall
 2- adding an event listener to the window to detect when the page gets refreshed (or closed and reopened). It is called the **DOMContentLoaded** event. It's another event we can listen too, just like 'click' or 'keydown'! 
 We'll invoke the displayTodos function at that moment:
 
-```
+```javascript
 window.addEventListener('DOMContentLoaded', displayTodos);
 ```
 
