@@ -216,7 +216,7 @@ And now when you'll hear about **state management**, you'll know it's about hand
 And you will get it, i guarantee it.
 
 These 2 things, **Components** and **State** are at the core of what you probably have heard people refer to as the *"React philosophy"*. 
-Indeed, things are handled quite **differently**, but it's absolutely possible to start learning it, even if, like me, you're not a JavaScript Jedi yet!
+Indeed, things are handled quite **differently**, but it's absolutely possible to start learning it, even if like me, you're not a JS Jedi yet!
 
 <a name="4"></a>
 ## The HUGE Benefits of starting to learn React now.
@@ -225,8 +225,8 @@ Indeed, things are handled quite **differently**, but it's absolutely possible t
 
 - Because of React's class components, it will contribute to improve your OOP knowledge : you'll be writing a certain amount of  `this.state.myStuff`, `this.setState({ key : value })`, `this.state.otherStuff`, `this.myMethod`, `this.otherMethodOfMine`...
 - faster then you know you will spend your time destructuring the state (it sounds so complicated now but trust me it is so simple once you are within React).
-Also, you will have to use the spread operator `...`😬 all the time! Check this out: `[...array]` is the same as `array.slice()` and  `.slice()` is the array method to *make a copy* of an array. You'll need it a lot in React, to change/update a state! You'll learn that **the state is immutable** (you canNOT change it directly like that), so you HAVE to make a *copy* of it (with the... spread operator 😋), update the copy as you want and paste the updated copy (like a copy/paste really!)
-- Be sure of that: your JS knowledge with seriously increase or strengthen by learning React!
+Also, you will have to use the spread operator `...`😬 all the time! Check this out: `[...array]` is the same as `array.slice()` and  `.slice()` is the array method to *make a copy* of an array. You'll need it a lot in React, to change/update a state! You'll learn that **the state is immutable** and it has consequences. But don't panic, React has several major built-in methods to deal with that.
+- You can be 100% confident that your JS knowledge will seriously rocket or at least strengthen, by learning React!
  
 Today i'm so unimpressed by the spread operator and i'm destructuring the shht out of everything!😂 
 And it's only been 2 full weeks of learning sofar! You can do it too, for real. Just take your time, to each his/her own pace. 
@@ -234,13 +234,13 @@ And it's only been 2 full weeks of learning sofar! You can do it too, for real. 
 **Get quicker to the goal of finding a junior dev job!**
 
 Let's be honest: React is very popular on the job market. 
-I think the sooner you jump into learning it, the better. You HAVE TO learn JavaScript either way! So why not do it with React? 2 stones 1 bird. But poor bird😢 so 1 stone 2 ricochets (or more than 2!😉 ) 
+I think the sooner you jump into learning it, the better. You HAVE TO learn JavaScript  anyway! So why not do it with React? 2 stones 1 bird. But poor bird😢 so 1 stone 2 ricochets (even more than 2!😉 ) 
 
 **Discovery of many great libraries, dependancies**
 
-Also, React comes in with a plethora of tools, libraries, dependencies which is also very good for you to try, it will make you feel more at ease with *development*.  
+Also, React comes in with a plethora of tools, libraries, dependencies which is also very good for you to try, it will make you feel more at ease with web *development* in general.  
 From *webpack* to bundle the project to *react-bootstrap* or *material-UI* for layout, *react-spring* for animations, *styled.components* or *emotion* to write CSS- in-JS (very cool!) and the list goes on!
-This is how i quickly came to a real understanding almost awakening of what it means to BUILD projects.
+This is how i quickly came to a real understanding - almost awakening - of what it really means to BUILD projects. This is all architecture! How great!!!
 
 <a name="5"></a>
 ## You ARE ready to start! 👊🏾
@@ -248,10 +248,11 @@ This is how i quickly came to a real understanding almost awakening of what it m
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/ys2819ozquqv37o84ocp.gif)
 
 Yeah, now is the moment when you drop everything you were doing and start learning React! 
-You are in the middle of finishing yet another JS project? okay, keep at it BUT implement it with React!
-1- open the terminal and type: `npx install react`
-2- create a folder for this very first react project!
-3- back to terminal, make sure to locate yourself within this new folder (that is if you didn't create the folder from terminal using the `mkdir` command😉) and type: `create-react-app` (give a name to your project)
+
+1- create a folder for this very first react project!
+2- open the terminal (make sure to locate yourself within this new folder) and type: `npx create-react-app my-app`
+3- once the installation is complete, you can read: 
+3- back to terminal,  and type: `create-react-app` (give a name to your project)
 4- within your app folder on terminal, type:`npm start`
 BOOM the magic is starting!
 
