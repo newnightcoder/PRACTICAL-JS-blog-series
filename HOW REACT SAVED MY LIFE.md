@@ -101,7 +101,7 @@ So any component will be created like this:
 class MyComponent extends Component = {
   //some code
 }
-```javascript
+```
 *by the way:* the `Component` class that we extend to create our components comes from React!😉
 We import it at the very top of the file.
 - you can write the same as a function (functional component):
@@ -109,13 +109,13 @@ We import it at the very top of the file.
 function MyComponent(){
    //some code
 }
-```javascript
+```
 - arrow function? yes:
 ```javascript
 const MyComponent = () => {
  // some code
 }
-```javascript
+```
 
 OK. Look at the snippet below. This is the full code for an actual real component. 
 Let's say the title component of a website.
@@ -126,19 +126,19 @@ class Title extends Component = {
   return <h1> I am the motherf*****g Title component of the website!!! Sway!!! </h1>
  }
 }
-```javascript
+```
 - same component, functional:
 ```javascript
 function Title(){
  return <h1> I am the motherf*****g Title component of the website!!! Sway!!! </h1>
 }
-```javascript
+```
 - arrow function, yes please:
 ```javascript
 const Title = () => {
  return <h1> I am the motherf***ing Title component of the website!!! Sway!!! </h1>
 }
-```javascript
+```
 I know. Your brain is shouting: "HEY WAIT! isn't that HTML that i see in the return statement?"
 Well, no. It's... **JSX**!
 And have you noticed the `render()`method in the class component? It belongs to the Component class of React and is responsible for displaying, **rendering** the JSX! As you can see, functional components have no `render()`, which makes sense: they're not classes! They just use the `return` statement.
@@ -167,7 +167,7 @@ state = {
  key:value
 // etc...
 }
-```javascript
+```
 The **state** is defined by YOU when creating your class component. It will **store the data** or **starting point value** used by the component that needs it.
 (*sidenote*: the **state** is "initialised" in class components only! It can also be handled by functional components, with the React HOOKS! I used to be so impressed by this word when in fact that's all it is: built-in React methods to manage state within functional components! But that's another story you'll be reading soon 😉 ).
 
@@ -180,7 +180,7 @@ So for example, to create a classic Counter component, you would write:
    return <div> {this.state.count} </div>
   }
  }
- ```javascript
+ ```
 This means that the starting point of our Counter is zero. 
 Now: everytime the **state** of the Counter (count : 0) will be incremented or decremented, React will **render** or **re-render** (again and again) the Counter with its updated count on the screen. 
 How does it work under the hood? Well, it's too complicated to explain right now and i actually couldn't😋  but just to give you the main thing: React uses a virtual DOM and there's React.createElement()... 
@@ -214,7 +214,7 @@ The main one is: `setState()`. You will be using it all the time! `this.setState
    )
   }
  } 
-```javascript
+```
 Not that crazy complicated, you see? 
 And this counter works perfectly! You press the button and the number in the div just below increases! (you need to add some css of course😋 but you know how to do that!)
 I know you still might have some reservations but i'm sure you understand this simple counter by just reading the code. Self-explanatory enough, right?
